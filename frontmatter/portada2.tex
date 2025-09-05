@@ -1,0 +1,36 @@
+% --- Datos portada ---
+\newcommand{\BookEdition}{FIRST EDITION}
+\newcommand{\BookTitle}{MATHEMATICAL FOUNDATIONS OF\\ NEURAL NETWORKS}
+\newcommand{\BookSubtitle}{From CNNs to PINNs, QINNs, and Deep Reinforcement Learning}
+\newcommand{\BookAuthor}{RAPHAEL NORIEGA}
+
+\definecolor{coverbg}{HTML}{001F54} % azul marino
+\definecolor{coverfg}{HTML}{F2EFEA} % texto claro
+
+\begin{titlepage}
+  \thispagestyle{empty}
+
+  % Fondo azul solo en ESTA página
+  \AddToShipoutPictureBG*{%
+    \AtPageLowerLeft{\color{coverbg}\rule{\paperwidth}{\paperheight}}%
+  }
+
+  % Texto
+  \vspace*{1.6cm}
+  \begin{center}
+    {\Large\textsc{\textcolor{coverfg}{\BookEdition}}}
+  \end{center}
+
+  \vspace*{1.2cm}
+  \begin{center}
+    {\fontsize{34}{40}\selectfont\bfseries\textcolor{coverfg}{\BookTitle}\par}
+    \vspace{0.8cm}
+    {\large\itshape\textcolor{coverfg}{\BookSubtitle}\par}
+  \end{center}
+
+  \vfill
+  \begin{center}
+    {\fontsize{20}{24}\selectfont\bfseries\textcolor{coverfg}{\BookAuthor}\par}
+  \end{center}
+\end{titlepage}
+\cleardoublepage

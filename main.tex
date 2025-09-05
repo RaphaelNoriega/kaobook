@@ -1,1 +1,87 @@
 \documentclass{kaobook}
+
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+% Colores, fondos y vectores
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgffor}
+\usepackage{eso-pic} % <- para fondo de portada
+% opcional si usas efectos:
+\usetikzlibrary{calc,decorations.pathmorphing}
+
+% Para dibujar sobre toda la página
+\usepackage{lipsum}
+
+\onehalfspacing
+
+\setcounter{tocdepth}{2}    % capítulos+secciones en el ToC
+\setcounter{secnumdepth}{3} % numera hasta \subsection
+\begin{document}
+
+% -------- FRONTMATTER --------
+\frontmatter
+\input{frontmatter/portada2}
+\cleardoublepage 
+\color{black}            % <— importante
+\tableofcontents
+\cleardoublepage      
+% -------- MAINMATTER --------
+\mainmatter
+\part{Mathematical Preliminaries}
+\include{chapters/ch01_introduction}
+\include{chapters/ch02_linear_algebra}
+\include{chapters/ch03_calculus}
+\include{chapters/ch04_prob_info}
+\include{chapters/ch05_optimization}
+\include{chapters/ch06_functional_analysis}
+
+\part{Classical Neural Networks}
+\include{chapters/ch07_perceptron}
+\include{chapters/ch08_mlps}
+\include{chapters/ch09_cnns}
+\include{chapters/ch10_rnns}
+\include{chapters/ch11_autoencoders}
+\include{chapters/ch12_gnns}
+
+\part{Neural Networks for Differential Equations}
+\include{chapters/ch13_math_methods_pdes}
+\include{chapters/ch14_pinns}
+\include{chapters/ch15_ipinns}
+\include{chapters/ch16_qinns}
+\include{chapters/ch17_neural_operators}
+
+\part{Reinforcement Learning}
+\include{chapters/ch18_classical_rl}
+\include{chapters/ch19_deep_rl}
+
+\part{Modern Architectures}
+\include{chapters/ch20_generative_models}
+\include{chapters/ch21_transformers}
+
+\part{Advanced Topics}
+\include{chapters/ch22_beyond_gd}
+\include{chapters/ch23_math_frontiers}
+\include{chapters/ch24_meta_transfer}
+\include{chapters/ch25_explainability}
+\include{chapters/ch26_ethics}
+
+\part{Practical Implementation}
+\include{chapters/ch27_frameworks}
+\include{chapters/ch28_scaling}
+\include{chapters/ch29_case_studies}
+
+\appendix
+\include{chapters/appA_notation}
+\include{chapters/appB_linear_algebra_toolbox}
+\include{chapters/appC_distributions}
+\include{chapters/appD_special_functions}
+\include{chapters/appE_framework_snippets}
+
+
+% -------- BACKMATTER --------
+\backmatter
+% (bibliografía más tarde)
+
+\end{document}

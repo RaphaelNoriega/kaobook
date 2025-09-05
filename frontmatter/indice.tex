@@ -1,0 +1,233 @@
+% ===============================
+% TABLE OF CONTENTS STRUCTURE
+% ===============================
+
+\frontmatter
+\tableofcontents
+
+\mainmatter
+
+% ===============================
+% PART I – Mathematical Preliminaries
+% ===============================
+\part{Mathematical Preliminaries}
+
+\chapter{Introduction}
+\section{Historical context of AI and neural networks}
+\section{AI winters and the deep learning revolution}
+\section{Why mathematics matters in deep learning}
+
+\chapter{Linear Algebra Essentials}
+\section{Vector spaces and inner products}
+\section{Eigenvalues, eigenvectors, diagonalization}
+\section{Singular value decomposition (SVD)}
+\section{Tensor notation and operations}
+
+\chapter{Multivariable Calculus and Analysis}
+\section{Gradients, Jacobians, Hessians}
+\section{Taylor expansions in multiple variables}
+\section{Divergence, curl, and Laplacians}
+\section{Variational principles}
+
+\chapter{Probability, Statistics, and Information Theory}
+\section{Random variables and distributions}
+\section{Expectation, variance, covariance}
+\section{Gaussian and exponential families}
+\section{Entropy, KL divergence, mutual information}
+
+\chapter{Optimization Theory}
+\section{Convexity, duality, and Lagrangians}
+\section{Gradient descent and its variants}
+\section{Stochastic optimization and convergence}
+\section{Newton and quasi-Newton methods}
+
+\chapter{Functional Analysis Foundations}
+\section{Normed spaces, Banach and Hilbert spaces}
+\section{Orthogonal polynomials (Hermite, Laguerre, Legendre)}
+\section{Special functions (Gamma, Beta, Bessel)}
+\section{Operator theory foundations for PINNs \& QINNs}
+
+% ===============================
+% PART II – Classical Neural Networks
+% ===============================
+\part{Classical Neural Networks}
+
+\chapter{The Perceptron and Linear Models}
+\section{McCulloch–Pitts neurons}
+\section{Rosenblatt’s perceptron and linear separability}
+\section{Logistic regression as probabilistic perceptron}
+
+\chapter{Feedforward Networks (MLPs)}
+\section{Activation functions (ReLU, sigmoid, tanh, GELU, softmax)}
+\section{Universal Approximation Theorem}
+\section{Forward and backward propagation}
+\section{Vanishing and exploding gradients}
+
+\chapter{Convolutional Neural Networks (CNNs)}
+\section{Mathematical basis of convolution}
+\section{Feature maps, receptive fields, pooling}
+\section{Modern CNN architectures (AlexNet, VGG, ResNet)}
+\section{Applications in vision, audio, and physics}
+
+\chapter{Recurrent Neural Networks (RNNs)}
+\section{Sequences as dynamical systems}
+\section{Gradient vanishing and exploding}
+\section{LSTMs and GRUs}
+\section{Applications in NLP, speech, time-series}
+
+\chapter{Autoencoders and Representation Learning}
+\section{Linear autoencoders and PCA}
+\section{Nonlinear autoencoders}
+\section{Variational Autoencoders (VAEs)}
+\section{Latent space geometry}
+
+\chapter{Graph Neural Networks (GNNs)}
+\section{Graph Laplacians and spectral methods}
+\section{Message passing frameworks}
+\section{Applications in chemistry, materials, biology}
+
+% ===============================
+% PART III – Neural Networks for Differential Equations
+% ===============================
+\part{Neural Networks for Differential Equations}
+
+\chapter{Mathematical Methods for Differential Equations}
+\section{Classification of ODEs and PDEs}
+\section{Boundary and initial conditions}
+\section{Separation of variables}
+\section{Sturm–Liouville problems and orthogonal expansions}
+\section{Fourier and Laplace transforms}
+\section{Spectral methods (Chebyshev, Legendre)}
+\section{Galerkin and Finite Element Methods (FEM)}
+\section{Method of Frobenius and special functions}
+
+\chapter{Physics-Informed Neural Networks (PINNs)}
+\section{Embedding PDEs into loss functions}
+\section{Collocation and weak formulations}
+\section{Elliptic, parabolic, and hyperbolic PDEs}
+\section{Applications: fluids, electromagnetism, quantum mechanics}
+\section{Extensions: XPINNs, VPINNs, Bayesian PINNs}
+\section{Inverse problems (intro to iPINNs)}
+
+\chapter{Inverse Physics-Informed Neural Networks (iPINNs)}
+\section{Motivation: the role of inverse problems}
+\section{Formulation with unknown coefficients}
+\section{Loss functions for parameter estimation}
+\section{Applications: heat, waves, Schrödinger, materials}
+\section{Ill-posedness and regularization}
+\section{Sensitivity to noise and data quality}
+
+\chapter{Quantum Neural Networks (QINNs)}
+\section{Hilbert spaces and Dirac notation}
+\section{Quantum perceptron and gates as layers}
+\section{Variational quantum circuits (VQE, QAOA)}
+\section{Quantum Boltzmann Machines, QCNNs, Quantum Reservoirs}
+\section{Parameter-shift rule for gradients}
+\section{Challenges: barren plateaus, NISQ hardware}
+\section{Applications in optimization, chemistry, cryptography}
+
+\chapter{Neural Operators and DeepONets}
+\section{Learning operators between function spaces}
+\section{Comparison with PINNs, iPINNs, FEM}
+\section{Applications in PDEs and scientific computing}
+
+% ===============================
+% PART IV – Reinforcement Learning
+% ===============================
+\part{Reinforcement Learning}
+
+\chapter{Classical Reinforcement Learning}
+\section{Agents, environments, states, actions, rewards}
+\section{Markov Decision Processes (MDPs)}
+\section{Value functions and Bellman equations}
+\section{Tabular methods: SARSA, Q-learning}
+
+\chapter{Deep Reinforcement Learning}
+\section{Deep Q-Networks (DQN)}
+\section{Policy gradient methods (REINFORCE, PPO)}
+\section{Actor–Critic architectures (A2C, A3C)}
+\section{Landmark systems: AlphaGo, AlphaZero, MuZero}
+
+% ===============================
+% PART V – Modern Architectures
+% ===============================
+\part{Modern Architectures}
+
+\chapter{Generative Models}
+\section{GANs and minimax optimization}
+\section{Wasserstein GANs, StyleGAN}
+\section{Diffusion models and stochastic processes}
+\section{Applications in synthesis and design}
+
+\chapter{Transformers and Attention Mechanisms}
+\section{Self-attention: queries, keys, values}
+\section{Multi-head attention}
+\section{Positional encodings}
+\section{Transformer architectures: BERT, GPT, multimodal}
+\section{Applications in PDEs and symbolic regression}
+
+% ===============================
+% PART VI – Advanced Topics
+% ===============================
+\part{Advanced Topics}
+
+\chapter{Optimization Beyond Gradient Descent}
+\section{Variational inference}
+\section{Expectation-Maximization (EM)}
+\section{Federated optimization challenges}
+
+\chapter{Mathematical Frontiers of Neural Networks}
+\section{Neural Tangent Kernels (NTK)}
+\section{Infinite-width limits and mean-field theory}
+\section{Geometry of loss landscapes}
+\section{Generalization bounds and capacity}
+
+\chapter{Meta-Learning and Transfer Learning}
+\section{Few-shot learning}
+\section{Pretraining and fine-tuning}
+\section{Continual learning}
+
+\chapter{Explainability and Interpretability}
+\section{Saliency maps and Grad-CAM}
+\section{SHAP and LIME}
+\section{Interpretable PINNs and DRL policies}
+
+\chapter{Ethical and Societal Aspects}
+\section{Bias and fairness in AI}
+\section{Privacy and security}
+\section{AI regulation and governance}
+
+% ===============================
+% PART VII – Practical Implementation
+% ===============================
+\part{Practical Implementation}
+
+\chapter{Computational Frameworks}
+\section{PyTorch fundamentals}
+\section{TensorFlow and Keras}
+\section{JAX and differentiable programming}
+
+\chapter{Efficient Training and Scaling}
+\section{Hardware acceleration: GPUs, TPUs}
+\section{Parallelization and distributed training}
+\section{Memory-efficient backpropagation}
+
+\chapter{Case Studies in Scientific Machine Learning}
+\section{Navier–Stokes with PINNs}
+\section{QINNs for quantum chemistry}
+\section{DRL for robotics and control}
+\section{CNNs/GNNs for materials science}
+
+% ===============================
+% APPENDICES
+% ===============================
+\appendix
+\chapter{Mathematical Notation and Symbols}
+\chapter{Linear Algebra Toolbox}
+\chapter{Probability Distributions}
+\chapter{Special Functions (Gamma, Beta, Bessel, etc.)}
+\chapter{Implementations in PyTorch and TensorFlow}
+
+\backmatter
+\bibliographystyle{plain}
+\bibliography{references}
